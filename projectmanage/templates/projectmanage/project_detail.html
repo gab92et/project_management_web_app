@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Project Detail{% endblock %}
+
+{% block content %}
+    <h2>{{ project.title }}</h2>
+
+    <p> Start : {{ project.start_date }} -- Due : {{ project.due_date }} </p>
+    <p> {{ project.description }} </p>
+
+    <p> Tasks</p>
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <a href=" {% url 'project-detail-task' project.id task.id %} ">  {{ task.title }} - {{ task.advancement }}%</a> 
+            </li> 
+        {% endfor %}
+    </ul>
+
+    <a href=" {% url 'project-delete' project.id %} "> Delete</a>
+
+{% endblock %}

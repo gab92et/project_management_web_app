@@ -1,0 +1,87 @@
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  display: flex; /* Display the list items in a flex container */
+}
+
+nav ul li {
+  margin-right: 10px; /* Add some spacing between the list items */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+
+/* Style the form container */
+form {
+  max-width: 500px; /* Adjust the maximum width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Add some padding to the form */
+  background-color: #f2f2f2; /* Background color of the form */
+  border-radius: 8px; /* Rounded corners for the form */
+}
+
+/* Style the form inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+  width: 100%; /* Set the width of the inputs to 100% */
+  padding: 10px; /* Add padding to the inputs */
+  margin-bottom: 15px; /* Add some space between inputs */
+  border: 1px solid #ccc; /* Border color for the inputs */
+  border-radius: 4px; /* Rounded corners for the inputs */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Style the submit button */
+form input[type="submit"] {
+  background-color: #4CAF50; /* Background color of the button */
+  color: white; /* Text color of the button */
+  padding: 10px 20px; /* Add padding to the button */
+  border: none; /* Remove border from the button */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Change button color on hover */
+form input[type="submit"]:hover {
+  background-color: #45a049; /* Background color on hover */
+}
+
+

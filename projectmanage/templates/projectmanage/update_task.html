@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Update Task{% endblock %}
+
+{% block content %}
+    <h2>Update {{task.title}} </h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="advancement">Advancement (%):</label>
+        <input type="number" id="advancement" name="advancement" min="0" max="100" value="{{ task.advancement }}">
+        <button type="submit">Update</button>
+    </form>
+{% endblock %}

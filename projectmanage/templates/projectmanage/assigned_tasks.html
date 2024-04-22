@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Assigned Tasks{% endblock %}
+
+{% block content %}
+    <h2>Task Lists for  {{ worker }} </h2>
+    <ul>
+        {% for task in tasks %}
+        <li>{{ task.title }} - {{ task.advancement }}% : {{ task.description }} -- <a href=" {% url 'update-task' task.id %} ">Update</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+
+{% endblock %}
